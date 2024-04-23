@@ -132,7 +132,10 @@
             <h4>Enter PAN</h4>
             <form action="#">
               <input type="text" placeholder="Enter PAN" id="myinput" />
-              <button type="submit">Submit</button>
+              <a href="invoice.html" style="text-decoration: none;">
+                <button type="button" style="cursor: pointer; padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Submit</button>
+            </a>
+            
             </form>
           </div>
         </div>
@@ -168,5 +171,10 @@
     <!-- custom js -->
     <script type="text/javascript" src="js/custom.js"></script>
   </body>
-</html>
+  <script>
 
+    document.getElementById("submitButton").onclick = function() {
+        window.location.href = "invoice.html";
+    };
+  </script>
+</html>
